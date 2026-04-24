@@ -8,10 +8,10 @@ const cases = [
 
 const CaseStudies = () => {
   return (
-    <section className="container pb-16">
-      <div className="bg-foreground text-background rounded-[2.5rem] p-8 md:p-16 grid md:grid-cols-3 gap-8 md:divide-x md:divide-background/30">
+    <section className="container pb-12 md:pb-16">
+      <div className="bg-foreground text-background rounded-[2.5rem] p-6 sm:p-8 md:p-16 grid md:grid-cols-3 gap-6 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-background/30">
         {cases.map((text, i) => (
-          <div key={i} className="md:px-8 first:md:pl-0 last:md:pr-0 flex flex-col justify-between gap-6">
+          <div key={i} className="md:px-8 first:md:pl-0 last:md:pr-0 pt-6 first:pt-0 md:pt-0 flex flex-col justify-between gap-6">
             <p className="text-section-desc leading-relaxed">{text}</p>
             <a
               href="#"

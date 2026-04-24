@@ -2,9 +2,9 @@ import ctaImg from "@/assets/cta-illustration.svg";
 
 const CTA = () => {
   return (
-    <section className="container py-12">
-      <div className="bg-brand-light rounded-[2.5rem] p-8 md:p-16 grid md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-6">
+    <section className="container py-10 md:py-12">
+      <div className="bg-brand-light rounded-[2.5rem] p-6 sm:p-8 md:p-16 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+        <div className="space-y-5 md:space-y-6">
           <h2 className="text-section-title">
             Let's make things happen
           </h2>

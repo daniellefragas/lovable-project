@@ -16,10 +16,10 @@ const logos = [
 
 const Logos = () => {
   return (
-    <section className="container py-10">
-      <div className="flex flex-wrap items-center justify-between gap-8">
+    <section className="container py-8 md:py-10">
+      <div className="flex flex-wrap items-center justify-center md:justify-between gap-6 md:gap-8">
         {logos.map((l) => (
-          <img key={l.alt} src={l.src} alt={l.alt} loading="lazy" className="h-10 md:h-12 w-auto" />
+          <img key={l.alt} src={l.src} alt={l.alt} loading="lazy" className="h-7 sm:h-10 md:h-12 w-auto grayscale" />
         ))}
       </div>
     </section>
