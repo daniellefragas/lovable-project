@@ -28,7 +28,7 @@ const Header = () => {
         </ul>
         <a
           href="#"
-          className="hidden md:inline-flex items-center px-7 py-4 rounded-2xl border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
+          className="hidden md:inline-flex items-center px-7 py-4 rounded-[14px] border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
         >
           Request a quote
         </a>

@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
         <a
           href="#"
-          className="inline-flex items-center px-9 py-5 rounded-2xl bg-foreground text-background hover:bg-foreground/90 transition-colors text-base"
+          className="inline-flex items-center px-9 py-5 rounded-[14px] bg-foreground text-background hover:bg-foreground/90 transition-colors text-base"
         >
           Book a consultation
         </a>

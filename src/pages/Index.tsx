@@ -5,7 +5,6 @@ import SectionTitle from "@/components/landing/SectionTitle";
 import Services from "@/components/landing/Services";
 import CTA from "@/components/landing/CTA";
 import CaseStudies from "@/components/landing/CaseStudies";
-import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
@@ -26,7 +25,6 @@ const Index = () => {
         />
         <CaseStudies />
       </main>
-      <Footer />
     </div>
   );
 };

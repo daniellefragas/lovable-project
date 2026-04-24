@@ -41,7 +41,7 @@
     --brand-light: 0 0% 96%;
     --brand-green: 84 100% 70%;
 
-    --shadow-card: 0px 5px 0px 0px hsl(var(--brand-dark));
+    --shadow-card: 0px 5px 0px 0px #191A23;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -95,6 +95,6 @@
 
 @layer components {
   .highlight-green {
-    @apply inline-block bg-accent text-accent-foreground px-2 rounded-md;
+    @apply inline-block bg-accent text-accent-foreground px-2 rounded-[7px];
   }
 }
