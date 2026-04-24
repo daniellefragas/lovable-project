@@ -129,9 +129,18 @@
 
   /* Design system: button */
   .btn-primary-cta {
-    @apply inline-flex items-center justify-center px-9 py-5 rounded-[14px] bg-foreground text-background hover:bg-foreground/90 transition-colors text-cta-btn;
+    @apply inline-flex items-center justify-center px-6 sm:px-9 py-4 sm:py-5 rounded-[14px] bg-foreground text-background hover:bg-foreground/90 transition-colors text-cta-btn w-full sm:w-auto;
   }
   .btn-outline-cta {
-    @apply inline-flex items-center justify-center px-9 py-5 rounded-[14px] border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors text-cta-btn;
+    @apply inline-flex items-center justify-center px-6 sm:px-9 py-4 sm:py-5 rounded-[14px] border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors text-cta-btn;
+  }
+
+  /* Responsive headline scaling */
+  @media (max-width: 768px) {
+    .text-hero-title { font-size: 36px; line-height: 1.1; }
+    .text-hero-sub { font-size: 16px; line-height: 24px; }
+    .text-section-title { font-size: 32px; }
+    .text-section-desc { font-size: 16px; }
+    .text-cta-btn { font-size: 16px; line-height: 22px; }
   }
 }
