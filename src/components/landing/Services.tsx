@@ -45,7 +45,7 @@ const variantStyles: Record<Variant, { card: string; chip: string; learn: string
 
 const Services = () => {
   return (
-    <section className="container grid md:grid-cols-2 gap-8 md:gap-10 pb-10">
+    <section className="container grid lg:grid-cols-2 gap-8 md:gap-10 pb-10">
       {services.map((s, i) => {
         const v = variantStyles[s.variant];
         const arrowCircle = s.arrowCircle === "dark" ? "bg-foreground" : "bg-background";
@@ -66,7 +66,7 @@ const Services = () => {
                 <span className={`${arrowCircle} rounded-full w-10 h-10 flex items-center justify-center group-hover:rotate-12 transition-transform`}>
                   <ArrowIcon color={s.arrowColor} />
                 </span>
-                <span className="text-base">Learn more</span>
+                <span className="text-xl">Learn more</span>
               </a>
             </div>
             <img
@@ -75,7 +75,7 @@ const Services = () => {
               loading="lazy"
               width={220}
               height={220}
-              className="w-24 sm:w-32 md:w-52 h-auto shrink-0"
+              className="w-24 min-[610px]:w-20 md:w-52 h-auto shrink-0"
             />
           </article>
         );

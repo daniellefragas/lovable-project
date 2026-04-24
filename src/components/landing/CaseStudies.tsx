@@ -15,7 +15,7 @@ const CaseStudies = () => {
             <p className="text-section-desc leading-relaxed">{text}</p>
             <a
               href="#"
-              className="inline-flex items-center gap-3 text-accent hover:underline underline-offset-4 text-section-desc"
+              className="inline-flex items-center gap-3 text-accent hover:underline underline-offset-4 text-section-desc text-xl"
             >
               Learn more <ArrowIcon color="#B9FF66" />
             </a>

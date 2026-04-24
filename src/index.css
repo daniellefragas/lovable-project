@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 @layer base {
+  html, body {
+    @apply font-sans;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 4%;
@@ -100,28 +104,33 @@
 
   /* Design system: typography */
   .text-hero-title {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 60px;
     line-height: 1.05;
     font-weight: 500;
     letter-spacing: -0.02em;
   }
   .text-hero-sub {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
   }
   .text-section-title {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 40px;
     line-height: normal;
     font-weight: 500;
     letter-spacing: -0.02em;
   }
   .text-section-desc {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
   }
   .text-cta-btn {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
