@@ -13,7 +13,7 @@ const CTA = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center px-9 py-5 rounded-2xl bg-foreground text-background hover:bg-foreground/90 transition-colors"
+            className="inline-flex items-center px-9 py-5 rounded-[14px] bg-foreground text-background hover:bg-foreground/90 transition-colors"
           >
             Get your free proposal
           </a>
