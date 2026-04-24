@@ -1,16 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import Logos from "@/components/landing/Logos";
+import SectionTitle from "@/components/landing/SectionTitle";
+import Services from "@/components/landing/Services";
+import CTA from "@/components/landing/CTA";
+import CaseStudies from "@/components/landing/CaseStudies";
+import Footer from "@/components/landing/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <main>
+        <Hero />
+        <Logos />
+        <SectionTitle
+          title="Services"
+          description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
+        />
+        <Services />
+        <CTA />
+        <SectionTitle
+          title="Case Studies"
+          description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+        />
+        <CaseStudies />
+      </main>
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
