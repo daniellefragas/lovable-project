@@ -52,7 +52,7 @@ const Services = () => {
         return (
           <article
             key={i}
-            className={`${v.card} rounded-[2.5rem] border border-foreground shadow-card p-6 sm:p-8 md:p-12 flex items-center justify-between gap-4 transition-transform hover:-translate-y-1`}
+            className={`${v.card} rounded-[2.5rem] border border-foreground border-b-[6px] shadow-card p-6 sm:p-8 md:p-12 flex items-center justify-between gap-4 transition-transform hover:-translate-y-1`}
           >
             <div className="flex flex-col justify-between gap-8 md:gap-12 min-h-[200px] md:min-h-[240px]">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-medium leading-tight flex flex-col gap-0">
