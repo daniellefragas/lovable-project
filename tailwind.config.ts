@@ -44,7 +44,7 @@ export default {
         },
       },
       boxShadow: {
-        card: "0px 5px 0px 0px hsl(var(--brand-dark))",
+        card: "0px 5px 0px 0px #191A23",
       },
       borderRadius: {
         lg: "var(--radius)",
