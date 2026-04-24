@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Python AI Course — Premium SaaS Dark Hero
+   Python blue #3776AB, yellow #FFD43B, teal glow #00FFC6
+   All colors HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark-first design system */
+    --background: 220 20% 4%;
+    --foreground: 0 0% 98%;
+
+    --py-blue: 207 51% 44%;        /* #3776AB */
+    --py-yellow: 49 100% 61%;       /* #FFD43B */
+    --py-teal: 165 100% 50%;        /* #00FFC6 */
+    --py-dark: 220 20% 4%;
+    --py-dark-2: 220 18% 7%;
+
+    --gradient-hero: radial-gradient(ellipse at center, hsl(220 20% 8%) 0%, hsl(220 25% 3%) 70%);
+    --gradient-blob-1: radial-gradient(circle, hsl(var(--py-teal) / 0.18) 0%, transparent 60%);
+    --gradient-blob-2: radial-gradient(circle, hsl(var(--py-blue) / 0.22) 0%, transparent 65%);
+    --gradient-blob-3: radial-gradient(circle, hsl(var(--py-yellow) / 0.10) 0%, transparent 60%);
+
+    --shadow-glow-teal: 0 0 40px hsl(var(--py-teal) / 0.35), 0 0 80px hsl(var(--py-teal) / 0.15);
+    --shadow-glow-soft: 0 8px 32px hsl(var(--py-teal) / 0.18);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* legacy tokens kept for shadcn */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--gradient-hero);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    letter-spacing: -0.04em;
+  }
+  .font-mono {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+  }
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+  @keyframes blink-pixel {
+    0%, 92%, 100% { opacity: 1; filter: brightness(1); }
+    94% { opacity: 0.4; filter: brightness(1.6); }
+    96% { opacity: 1; filter: brightness(1); }
+    98% { opacity: 0.6; filter: brightness(1.4); }
+  }
+  .animate-blink-pixel {
+    animation: blink-pixel 4s steps(1, end) infinite;
+  }
+
+  @keyframes pixel-blink {
+    0%, 88%, 100% { opacity: 1; }
+    90% { opacity: 0.15; }
+    92% { opacity: 1; }
+    94% { opacity: 0.4; }
+    96% { opacity: 1; }
+  }
+  .animate-pixel-blink {
+    animation-name: pixel-blink;
+    animation-timing-function: steps(1, end);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 32s linear infinite;
+  }
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  .dot-grid {
+    background-image: radial-gradient(hsl(var(--py-teal) / 0.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .text-glow-teal {
+    text-shadow: 0 0 30px hsl(var(--py-teal) / 0.35);
+  }
+
+  .btn-glow:hover {
+    box-shadow: var(--shadow-glow-teal);
+  }
+}
