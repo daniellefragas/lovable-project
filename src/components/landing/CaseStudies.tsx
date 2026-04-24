@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import ArrowIcon from "./ArrowIcon";
 
 const cases = [
   "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
@@ -12,12 +12,12 @@ const CaseStudies = () => {
       <div className="bg-foreground text-background rounded-[2.5rem] p-8 md:p-16 grid md:grid-cols-3 gap-8 md:divide-x md:divide-background/30">
         {cases.map((text, i) => (
           <div key={i} className="md:px-8 first:md:pl-0 last:md:pr-0 flex flex-col justify-between gap-6">
-            <p className="text-base leading-relaxed">{text}</p>
+            <p className="text-section-desc leading-relaxed">{text}</p>
             <a
               href="#"
-              className="inline-flex items-center gap-2 text-accent hover:underline underline-offset-4"
+              className="inline-flex items-center gap-3 text-accent hover:underline underline-offset-4 text-section-desc"
             >
-              Learn more <ArrowUpRight className="w-4 h-4" />
+              Learn more <ArrowIcon color="#B9FF66" />
             </a>
           </div>
         ))}

@@ -1,11 +1,11 @@
+import logo from "@/assets/positivus-logo.svg";
+
 const navItems = ["About us", "Services", "Use Cases", "Pricing", "Blog"];
 
 const Logo = () => (
   <a href="#" className="flex items-center gap-2">
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-      <path d="M16 2 L20 12 L30 16 L20 20 L16 30 L12 20 L2 16 L12 12 Z" fill="currentColor" />
-    </svg>
-    <span className="text-2xl font-medium tracking-tight">Positivus</span>
+    <img src={logo} alt="Positivus" width={36} height={36} />
+    <span className="text-[30px] font-medium tracking-tight leading-none">Positivus</span>
   </a>
 );
 
@@ -26,10 +26,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <a
-          href="#"
-          className="hidden md:inline-flex items-center px-7 py-4 rounded-[14px] border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
-        >
+        <a href="#" className="hidden md:inline-flex btn-outline-cta">
           Request a quote
         </a>
       </nav>
